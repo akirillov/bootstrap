@@ -104,23 +104,12 @@ chown -R mysql:mysql /var/lib/mysql
 printf "===================> Configuring: setting root password\n"
 mysqladmin -u root password $PASSWD
 
-
 #3. edit my.cnf
 printf "===================> Configuring: updating my.cnf\n"
 cp -f my.cnf.bootstrap /etc/mysql/my.cnf
+sed -i "/wsrep_sst_auth/c\wsrep_sst_auth=root:$PASSWD" /etc/mysql/my.cnf
 
-<<<<<<< HEAD
-=======
 
-#3. replace debian.conf to allow galera capabilities (username and password)
-#cp -f debian.cnf.bootstrap /etc/mysql/debian.cnf
-
-#4. grant privileges
-#service mysql start
-
-#mysql -uroot -p$PASSWD -e "GRANT ALL PRIVILEGES on *.* TO 'debian-sys-maint'@'localhost' IDENTIFIED BY 'NeEgkqhvPcwlDEPN' WITH GRANT OPTION; FLUSH PRIVILEGES;"
-
->>>>>>> 9fdb340b9ec929b1ffab56e2fb2b16267be4c2a5
 #* Percona Server is distributed with several useful UDF (User Defined Function) from Percona Toolkit.
 # * Run the following commands to create these functions:
 

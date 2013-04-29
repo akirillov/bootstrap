@@ -115,7 +115,7 @@ wsrep_provider=/usr/lib/libgalera_smm.so
 # Cluster connection URL
 wsrep_cluster_address=gcomm://
 
-wsrep_sst_auth=root:7ru57n01
+wsrep_sst_auth
 wsrep_certify_nonPK=1
 wsrep_convert_LOCK_to_trx=0
 wsrep_auto_increment_control=1
@@ -132,11 +132,7 @@ default_storage_engine=InnoDB
 wsrep_slave_threads=2
 
 #provide via script
-<<<<<<< HEAD
 wsrep_cluster_name=percona_cluster
-=======
-wsrep_cluster_name=ZeptoLab
->>>>>>> 9fdb340b9ec929b1ffab56e2fb2b16267be4c2a5
 
 #wsrep_node_name=CNode TODO: provide via script
 
