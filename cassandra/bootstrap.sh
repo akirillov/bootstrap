@@ -72,9 +72,6 @@ printf "========> Cassandra Installation Status: [SUCCESS]\n"
 
 sudo cp -f $CURRENT_DIR/cassandra /etc/init.d/cassandra
 
-printf "========> Starting service\n"
-
-sudo service cassandra start
-
 sudo service cassandra status
 
+printf "To start service use command\n sudo service cassandra start\n"
