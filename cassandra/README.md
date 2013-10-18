@@ -4,6 +4,9 @@ Cassandra Bootstrap
 This bash script provides initial bootstrapping for Cassandra NoSQL storage.
 Script uses deb package sources for installation. As far as available 2.0 package has bug in init.d script an appropriate replacement provided alongside with current bootstrap script.
 
+`tokengentool` python script provides simple initial token generation for specified number of nodes
+
+
 Tested with Ubuntu Server 12.04 and Cassandra 2.0 Debian package.
 You need test and may be modify script in case of different platform.
 
