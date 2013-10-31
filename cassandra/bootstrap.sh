@@ -8,7 +8,7 @@ usage()
 cat << EOF
 usage: $0 options
 
-This script runs installation of Percona XtraDB Cluster on Ubuntu 12.04 64bit server 
+This script runs installation of Cassandra Storage Server on Ubuntu 12.04 64bit server 
 
 OPTIONS:
    -h      	Show this message
