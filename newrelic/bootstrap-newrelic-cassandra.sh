@@ -16,7 +16,7 @@ tar -C $dir -xzf newrelic_3legs_plugin-0.0.2-cassandra.tar.gz
 
 cd $dir
 
-echo "$LICENSE_KEY" >> config/newrelic.properties
+echo "licenseKey = $LICENSE_KEY" >> config/newrelic.properties
 
 echo "#!/bin/bash\njava -jar newrelic_3legs_plugin-0.0.2.jar &" >> start.sh
 
