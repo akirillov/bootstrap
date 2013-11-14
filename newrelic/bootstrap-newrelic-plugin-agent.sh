@@ -16,6 +16,7 @@ apt-get install python-pip
 apt-get update
 
 pip install newrelic-plugin-agent
+pip install newrelic_plugin_agent[postgresql]
 
 sed -e "s/REPLACE_WITH_REAL_KEY/$LICENSE_KEY/g" /opt/newrelic_plugin_agent/newrelic_plugin_agent.cfg > /tmp/newrelic_plugin_agent.cfg.tmp
 mv /tmp/newrelic_plugin_agent.cfg.tmp /opt/newrelic_plugin_agent/newrelic_plugin_agent.cfg
