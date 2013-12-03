@@ -1,4 +1,4 @@
-Bootstrap Scripts for Full-Stack Developers
+Full-Stack Developer Helper Scripts
 =========
 
 Scripts and descriptors for different kind of situations when I need to bootstrap any environment from scratch
