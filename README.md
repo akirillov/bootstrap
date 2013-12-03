@@ -8,7 +8,7 @@ Scripts and descriptors for different kind of situations when I need to bootstra
 * Oracle JDK one-liner
 * Percona Cluster
 * Redis Server
-* Zabbis Server
+* Zabbix Server
 * Zookeeper & Exhibitor Bootstrap
 
 Main idea behind the scripts is in providing example for setting up corresponding system or application with short descriptions of common gotchas.
