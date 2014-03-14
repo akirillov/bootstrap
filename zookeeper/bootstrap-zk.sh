@@ -12,7 +12,7 @@ wget https://raw.github.com/Netflix/exhibitor/master/exhibitor-standalone/src/ma
 mvn assembly:single
 
 #Generating startup script for exhibitor
-echo -e "local_ip=`ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | cut -d' ' -f1`\necho \$local_ip \njava -jar target/exhibitor-1.0-jar-with-dependencies.jar -c file --hostname \$local_ip &" >> start.sh
+echo -e "local_ip=`ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'`\necho \$local_ip \njava -jar target/exhibitor-1.0-jar-with-dependencies.jar -c file --hostname \$local_ip &" >> start.sh
 
 chmod +x start.sh
 
